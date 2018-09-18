@@ -214,6 +214,7 @@ test('hackySdp', function *(t) {
 
 
   t.equal(media[0].iceOptions, 'google-ice', 'ice options parsed');
+  t.equal(media[0].minptime, 60, 'minptime parsed');
   t.equal(media[0].maxptime, 60, 'maxptime parsed');
   t.equal(media[0].rtcpMux, 'rtcp-mux', 'rtcp-mux present');
 
